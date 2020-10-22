@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+		body{
+			background-color: #638C88;
+		}
+		input{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+		}
+		
+	</style>
+</head>
+<body>
+  
+    <h1>Are you sure to delete {{obj}} </h1><br>
+    <form method="POST">
+        <div class="item-row"></div>
+        {% csrf_token %}
+    <input type="submit">
+    </div>
+  </form>
+   
+</body>
+</html>

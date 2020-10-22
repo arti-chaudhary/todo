@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+		body{
+			background-color: #638C88;
+		}
+		.center-column{
+			width: 600px;
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 3px;
+			box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+		}
+		input{
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+		}
+		.item-row{
+			background-color: #906abd;
+			margin: 10px;
+			padding: 20px;
+			border-radius: 3px;
+			color: #fff;
+			font-size: 16px;
+			box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+		}
+	</style>
+</head>
+<body>
+    <div class="center-column">
+        <form method="POST">
+            <div class="item-row">
+            {% csrf_token %}
+        <input type="username" name="username" placeholder="username"><br>
+        <input type="password" name="password" placeholder="password"><br>
+        <input type="submit" >
+        </div>
+        </div>
+      </form>
+    </div>
+</body>
+</html>
